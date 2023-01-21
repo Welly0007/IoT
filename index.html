@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Plant Keeper</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="display-4 text-white text-uppercase m-0">Plant Keeper</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link active">Mission</a>
+
+            </div>
+            <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
+                <h1 class="display-4 text-white text-uppercase m-0">Plant Keeper</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#readings" class="nav-item nav-link">Readings</a>
+                <a href="#Monitors" class="nav-item nav-link">Monitors</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/pexels-photomix-company-1002703.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Plant Keeper</h4>
+                            <h3 class="display-2 font-secondary text-white mb-4">A Case study on the effects of climate change and its association with drought</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/internet-of-things-iot-istock-1201992144.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Plant Keeper</h4>
+                            <h3 class="display-2 font-secondary text-white mb-4">An implementation of IoT Tech in Climate Monitoring</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid mb-4 mb-lg-0" src="img/iStock-520289888-2-e1641284826152 (1).jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Mission</h6>
+                    <h1 class="display-4 mb-3"><span class="text-primary">We are Goup 326</span></h1>
+                    <p>Our Project aims to adapt the change circumstances in agriculture by correlating the Moisture and Temperature and adapt the changes with smart irrigation System</p>
+                    <a href="#team" class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button">Team members</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <!-- About Start -->
+    
+<div id="readings">
+    <h1>Current Readings:</h1>
+    <div class="readingboxes">
+<div class="reading"><h3>Temperature</h3><h4 id="test"></h2></div>
+<div class="reading"><h3>Moisture</h3><h4 id="test2"></h2></div>
+<div class="reading"><h3>Irrigation System State</h3><h4> Not Operating</h2></div>
+</div>
+</div>
+    <!-- About End -->
+<div id="Monitors">
+    <div class="tempgraphs">
+    <h1>Container A</h1>
+    <div class="graphboxes">
+    <div class="tempcl cl1">
+        <h4>Temperature (C) / Time</h4>
+    <canvas id="Chart1">
+    </canvas>
+</div>
+<div class="tempcl cl2">
+    <h4>Moisture (%) / Time</h4>
+    <canvas id="Chart4">
+    </canvas>
+</div>
+<div class="tempcl cl3">
+    <h4> Regression Line (Moisture vs. Temp)</h4>
+    <canvas id="Chart7">
+    </canvas>
+</div>
+</div>
+</div>
+<div class="tempgraphs">
+    <h1>Container B</h1>
+    <div class="graphboxes">
+    <div class="tempcl cl1">
+        <h4>Temperature (C) / Time</h4>
+    <canvas id="Chart2">
+    </canvas>
+</div>
+<div class="tempcl cl2">
+    <h4>Moisture (%) / Time</h4>
+    <canvas id="Chart5">
+    </canvas>
+</div>
+<div class="tempcl cl3">
+    <h4>Regression Line (Moisture vs. Temp)</h4>
+    <canvas id="Chart8">
+    </canvas>
+</div>
+</div>
+</div>
+<div class="tempgraphs">
+    <h1>Container C</h1>
+    <div class="graphboxes">
+    <div class="tempcl cl1">
+        <h4>Temperature (C) / Time</h4>
+    <canvas id="Chart3">
+    </canvas>
+</div>
+<div class="tempcl cl2">
+    <h4>Moisture (%) / Time</h4>
+    <canvas id="Chart6">
+    </canvas>
+</div>
+<div class="tempcl cl3">
+    <h4>Regression Line (Moisture vs. Temp)</h4>
+    <canvas id="Chart9">
+    </canvas>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid py-5" id="team">
+    <div class="container py-5">
+        <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Team</h6>
+            <h1 class="font-secondary display-4">Meet The Team</h1>
+        </div>
+        <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+            <div class="col-lg-6 p-0">
+                <div class="row m-0">
+                    <div class="col-sm-6 p-0 text-center">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                            <h5 class="mb-2">Youssef Nabil</h5>
+                            <p class="text-muted font-italic mb-2">Designer</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-0" style="min-height: 300px;">
+                        <img class="position-absolute w-100 h-100" src="img/team-1.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-lg-end m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+            <div class="col-lg-6 p-0">
+                <div class="row m-0">
+                    <div class="col-sm-6 p-0" style="min-height: 300px;">
+                        <img class="position-absolute w-100 h-100" src="img//55f809a4-ef6e-44c4-8d0d-6601ca3ba3ea.jpg" style="object-fit: cover;">
+                    </div>
+                    <div class="col-sm-6 p-0 text-center">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                            <h5 class="mb-2">Jonathon Maged</h5>
+                            <p class="text-muted font-italic mb-2">Researcher</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+            <div class="col-lg-6 p-0">
+                <div class="row m-0">
+                    <div class="col-sm-6 p-0 text-center">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
+                            <h5 class="mb-2">Mohamed Walid</h5>
+                            <p class="text-muted font-italic mb-2">Programmer</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-0" style="min-height: 300px;">
+                        <img class="position-absolute w-100 h-100" src="img/8b3c6f68-0cfa-4644-8ec7-688ee14f079d.jpg" style="object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Footer End -->
+<div class="charts">
+    
+</div>
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
